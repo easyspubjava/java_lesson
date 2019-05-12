@@ -2,23 +2,25 @@ package thisex;
 
 public class Person {
 
-	String name;
-	int weight;
-	int height;
+	private String name;
+	private String address;
 	
 	public Person() {
-		this("이름 없음");
+		this("이름 없음", "주소 없음");
 	}
 	
-	public Person(String name) {
+	public Person(String name, String address) {
 		this.name = name;
-	}
-	
-	public Person callThis() {
-		return this;
+		this.address = address;
 	}
 	
 	public void showInfo() {
 		System.out.println(name);
+		System.out.println(address);
 	}
+	
+	public Person  returnSelf() {
+		return this;
+	}
+	
 }

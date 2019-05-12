@@ -2,24 +2,24 @@ package staticex;
 
 public class Card {
 
-	private int cardNumber;
-	private static int serialNum = 10000;
+	private static int serialNum = 1000;
+	int cardNumber;
 	
-	Card(){
+	public Card() {
 		serialNum++;
 		cardNumber = serialNum;
 	}
 
-	public int getCardNumber() {
-		return cardNumber;
-	}
-
-	public void setCardNumber(int cardNumber) {
-		this.cardNumber = cardNumber;
-	}
-	
 	public static int getSerialNum() {
+		
+		
+		int i = 0;
 		return serialNum;
 	}
+
+	public static void setSerialNum(int serialNum) {
+		Card.serialNum = serialNum;
+	}
+	
 	
 }
