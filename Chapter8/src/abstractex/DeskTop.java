@@ -1,6 +1,6 @@
 package abstractex;
 
-public class DeskTop extends Computer{
+public  class DeskTop extends Computer{
 
 	@Override
 	public void Display() {

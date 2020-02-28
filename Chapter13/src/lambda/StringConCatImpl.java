@@ -7,3 +7,4 @@ public class StringConCatImpl implements StringConcat{
 		System.out.println( s1 + "," + s2 );
 	}
 }
+ 

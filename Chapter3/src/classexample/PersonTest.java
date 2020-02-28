@@ -4,18 +4,19 @@ public class PersonTest {
 
 	public static void main(String[] args) {
 
-		Person personLee = new Person();
+		Person personLee = new Person("ÀÌ¸ù·æ");
 		
 		personLee.height = 180;
 		personLee.weight = 85;
-		personLee.name = "ÀÌ¸ù·æ";
+		
+		String name = personLee.getName();
+		//personLee.setName("Lee");
+		
 		
 		System.out.println(personLee.showPersonInfo());
 		
-		Person personKim = new Person();
-		personKim.height = 180;
-		personKim.weight = 85;
-		personKim.name = "±èÀ¯½Å";
+		Person personKim = new Person("±èÀ¯½Å", 100, 188);
+		
 		
 		System.out.println(personKim.showPersonInfo());
 		
